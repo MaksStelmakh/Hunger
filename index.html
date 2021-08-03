@@ -18,45 +18,93 @@
 </head>
 
 <body>
-    <header>
-        <div class="container main-navigation">
-            <div>
-                <ul class="list navigation">
-                    <li class="">
-                        <a class="link" href="">home</a>
+    <header class="container header">
+       <nav>
+        <div class="main-navigation">
+            <div class="menu-navigation">
+                <ul class="list navigation-list">
+                    <li class="navigation-item">
+                        <a class="link navigation-link" href="">home</a>
                     </li>
-                    <li>
-                        <a class="link" href="">about</a>
+                    <li class="navigation-item">
+                        <a class="link navigation-link" href="">about</a>
                     </li>
-                    <li>
-                        <a class="link" href="">team</a>
+                    <li class="navigation-item">
+                        <a class="link navigation-link" href="">team</a>
                     </li>
-                    <li>
-                        <a class="link" href="">booking</a>
+                    <li class="navigation-item">
+                        <a class="link navigation-link" href="">booking</a>
                     </li>
                 </ul>
             </div>
-            <svg>
-                <use href="./images/sprite.svg#icon-logo"></use>
-            </svg>
-            <div>
-                <ul class="list navigation">
-                    <li>
-                        <a class="link" href="">menu</a>
+            <a href="./" class="logo">
+                <svg>
+                    <use href="./images/sprite.svg#icon-logo"></use>
+                </svg>
+            </a>
+            <div class="menu-navigation">
+                <ul class="list navigation-list">
+                    <li class="navigation-item">
+                        <a class="link navigation-link" href="">menu</a>
                     </li>
-                    <li>
-                        <a class="link" href="">galerie</a>
+                    <li class="navigation-item">
+                        <a class="link navigation-link" href="">galerie</a>
                     </li>
-                    <li>
-                        <a class="link" href="">events</a>
+                    <li class="navigation-item">
+                        <a class="link navigation-link" href="">events</a>
                     </li>
-                    <li>
-                        <a class="link" href="">contact</a>
+                    <li class="navigation-item">
+                        <a class="link navigation-link" href="">contact</a>
                     </li>
                 </ul>
             </div>
         </div>
+       </nav>
     </header>
+    <main>
+        <section class="container hero">
+               <p class="hero-left-text">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p> 
+            <div class="hero-center-section">
+                <p class="hero-place">restaurant</p>
+                <h1 class="hero-name">hungry people</h1>
+                <div class="main-bottom">
+                    <bottom class="site-bottom" type="button" >book table</bottom>
+                    <bottom class="site-bottom" type="button" >explore</bottom>
+                </div>
+            </div>
+            <div class="hero-right-section">
+                <ul class="list hero-social-list">
+                    <li class="hero-social">
+                        <a class="hero-social-link" href="">
+                            <div class="hero-social-border">
+                                <svg class="hero-social-svg">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hero-social">
+                        <a class="hero-social-link" href="">
+                            <div class="hero-social-border">
+                                <svg class="hero-social-svg">
+                                    <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hero-social">
+                        <a class="hero-social-link" href="">
+                            <div class="hero-social-border">
+                                <svg class="hero-social-svg">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
 </body>
 
