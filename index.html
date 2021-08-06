@@ -150,8 +150,56 @@
     </section>
     <!--===========================book a table================================-->
    <section class="bigger-container book-a-table">
-        <div>
-            <div></div>
+        <div class="main-container-book-a-table">
+            <div>
+                <h2 class="hero-name book-a-table-name">Book a table</h2>
+                <form>
+                    <div class="book-a-table-form">
+                        <div>
+                            <label class="book-a-table-label">
+                                Name
+                                <input class="imput" type="text" name="guest_name" pattern="[a-zA-Zа-яёА-ЯЁ]+"
+                                    title="Имя должно содержать буквы кирилицы или латиницы" minlength="3" required>
+                            </label>
+                            <label class="book-a-table-label">
+                                Phone
+                                <input class="imput" type="tel" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                                    title="099-000-00-00" minlength="2" required>
+                            </label>
+                            <label class="book-a-table-label">
+                                Date (mm/dd)
+                                <input class="imput" type="date" name="date_of_visit" value="2021-07-22" min="2021-01-01" max="2022-01-01"
+                                    required>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="book-a-table-label">
+                                Email
+                                <input class="imput" type="email" name="email">
+                            </label>
+                            <label class="book-a-table-label">
+                                People
+                                <select class="imput" id="people" name="number">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6+</option>
+                                </select>
+                            </label>
+                            <label class="book-a-table-label">
+                                time
+                                <input class="imput" type="time" name="time" min="10:00:00" max="23:00:00" />
+                            </label>
+                        </div>
+                    </div>
+                    <button class="form-btn" type="submit">book now</button>
+                </form>
+            </div>
+            <div>
+                <img src="./images/book-a-table/bookatable-img.png" alt="">
+            </div>
         </div>
    </section> 
 </main>

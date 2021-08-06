@@ -327,3 +327,56 @@ body {
 }
 
 /*========================================================= book a table */
+
+.book-a-table {
+  padding-top: 100px;
+  padding-bottom: 45px;
+}
+
+.main-container-book-a-table {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imput {
+  background: #e5e5e5;
+  border-radius: 5px;
+  border: none;
+  width: 277px;
+  height: 60px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.book-a-table-name {
+  font-size: 36px;
+  line-height: 1.33;
+  margin-bottom: 30px;
+  color: var(--black-color);
+}
+
+.book-a-table-form {
+  display: flex;
+  width: 565px;
+}
+
+.form-btn {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.67;
+  color: var(--white-color);
+  background: #e8c300;
+  border-radius: 5px;
+  border: none;
+  width: 565px;
+  height: 60px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.book-a-table-label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  color: rgba(51, 51, 51, 0.5);
+}
