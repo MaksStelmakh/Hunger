@@ -1,4 +1,4 @@
-/* COMPONENTS */
+/* ========================================COMPONENTS */
 :root {
   --white-color: #ffffff;
   --black-color: #000000;
@@ -53,7 +53,7 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 }
-/* HEADER */
+/* ====================================================HEADER */
 
 .navigation-list {
   display: flex;
@@ -110,7 +110,7 @@ body {
   transform: scaleX(1);
 }
 
-/* HERO */
+/* ==============================================================HERO */
 
 .hero {
   position: relative;
@@ -138,7 +138,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 356px;
+  margin-left: 120px;
   padding-top: 240px;
 }
 
@@ -247,7 +247,7 @@ body {
   background-color: var(--bottom-color);
 }
 
-/* ABOUT-US */
+/*============================================================== ABOUT-US */
 
 .main-about {
   display: flex;
@@ -266,10 +266,10 @@ body {
   color: var(--black-color);
   font-size: 36px;
   line-height: 1.33;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
 }
 
-.about-up-text {
+.section-up-text {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.55;
@@ -277,23 +277,53 @@ body {
   margin-bottom: 30px;
 }
 
-.about-down-text {
+.section-down-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
   text-align: center;
 }
 
-/* MASTER-SHEF */
+/*========================================================== MASTER-SHEF */
 
-.master-shef {
+.master-chef {
   padding-top: 45px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   background-image: url(../images/master-chef/masterchef-bg.jpg);
+  background-color: black;
 }
 
-.square {
-  width: 25px;
-  height: 25px;
-  background-position: 0 -100%;
+.chef-main-container {
+  display: flex;
+  align-items: center;
 }
+
+.chef-title {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.chef-right-section {
+  margin-right: 70px;
+}
+
+.chef {
+  font-size: 36px;
+  line-height: 1.33;
+  margin-bottom: 30px;
+}
+
+.chef-text {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.chef-text-down {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/*========================================================= book a table */
