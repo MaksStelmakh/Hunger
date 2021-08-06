@@ -318,11 +318,11 @@ body {
   margin-bottom: 30px;
 }
 
-.chef-text {
+.white-text {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.chef-text-down {
+.white-text-down {
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -392,4 +392,44 @@ body {
 
 .black-text {
   font-weight: 700;
+}
+
+/* ==========================================specialties */
+
+.specialties {
+  background-image: url(../images/specialtes/specialty-bg.jpg);
+  background-color: black;
+  padding-top: 45px;
+  padding-bottom: 10px;
+}
+
+.specialties-small-title {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.specialtes-name {
+  font-size: 36px;
+  line-height: 1.33;
+  margin-bottom: 30px;
+}
+
+.slick-dots {
+  position: absolute;
+  z-index: 10;
+  bottom: 3px;
+}
+
+.slick-dots li button:before {
+  color: var(--white-color);
+  font-size: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--bottom-color);
 }
