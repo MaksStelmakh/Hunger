@@ -53,6 +53,11 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 /* ====================================================HEADER */
 
 .navigation-list {
@@ -85,6 +90,7 @@ body {
   color: var(--white-color);
   padding-top: 45px;
   padding-bottom: 45px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-link::after {
@@ -183,6 +189,7 @@ body {
   margin-top: 100px;
   fill: inherit;
   margin-right: 5px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-down-btn:hover {
@@ -213,6 +220,7 @@ body {
   height: 60px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-social-list {
@@ -235,6 +243,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 23px 74px 23px 74px;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-bottom:last-child {
@@ -298,16 +307,6 @@ body {
   align-items: center;
 }
 
-.chef-title {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.5em;
-  text-transform: uppercase;
-  color: var(--white-color);
-  text-align: center;
-}
-
 .chef-right-section {
   margin-right: 70px;
 }
@@ -347,6 +346,12 @@ body {
   height: 60px;
   margin-top: 5px;
   margin-bottom: 10px;
+  padding: 27px 20px;
+}
+
+.imput:focus {
+  outline: none;
+  border: 2px solid var(--bottom-color);
 }
 
 .book-a-table-name {
@@ -403,7 +408,7 @@ body {
   padding-bottom: 10px;
 }
 
-.specialties-small-title {
+.small-title {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.17;
@@ -432,4 +437,215 @@ body {
 
 .slick-dots li.slick-active button:before {
   color: var(--bottom-color);
+}
+
+.specialties-text {
+  display: flex;
+  align-items: center;
+}
+
+/* ============================================MENU */
+
+.menu {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.menu-title {
+  font-size: 36px;
+  line-height: 1.33;
+  margin-bottom: 40px;
+  color: var(--black-color);
+}
+
+.menu-main-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--black-color);
+  width: 545px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 65px;
+}
+
+.menu-navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.menu-link {
+  padding: 20px 40px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--black-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  background-color: var(--bottom-color);
+  color: var(--white-color);
+  border-radius: 5px;
+}
+
+.menu-item:not(:last-child) {
+  border-right: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+.menu-price {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-right: -87px;
+}
+
+.menu-price-list {
+  margin-right: 87px;
+  margin-bottom: -40px;
+}
+
+.menu-name-eat {
+  font-family: var(--heading-text);
+  font-size: 18px;
+  line-height: 1;
+  color: #282828;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.menu-info-eat {
+  font-size: 10px;
+  line-height: 1.2;
+  color: #808080;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+/* ===========================================================PRIVATE-EVENTS */
+
+.events-container {
+  padding-top: 40px;
+  background-image: url(../images/events/events-bg.jpg);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.main-events-photo {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 35px;
+}
+
+.events-down-photo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.events-info {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.events-tell {
+  font-weight: 700;
+}
+
+/* ==============================================================CONTACT */
+
+.contact-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.contact-title {
+  font-size: 36px;
+  line-height: 1.33;
+  color: var(--black-color);
+  margin-bottom: 50px;
+}
+
+.contact-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--black-color);
+  text-align: center;
+  width: 565px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  margin-top: 50px;
+}
+
+.contact-imput {
+  width: 423px;
+}
+
+.contact-textarea {
+  padding: 27px 20px;
+  width: 1278px;
+  height: 120px;
+  resize: none;
+}
+
+.contact-down-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.contact-info {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  color: rgba(51, 51, 51, 0.5);
+  margin-left: -5px;
+}
+
+.info-svg {
+  fill: var(--bottom-color);
+  margin-right: 5px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+/* FOOTER */
+
+.footer-container {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 45px;
+}
+
+.map {
+  width: 1440px;
+}
+
+.footer-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 45px;
+  text-align: center;
+}
+
+.footer-black-text {
+  font-weight: 700;
 }
