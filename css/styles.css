@@ -62,7 +62,7 @@ img {
 
 .navigation-list {
   display: flex;
-  padding: 45px 27px;
+  margin: 45px 27px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
