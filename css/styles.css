@@ -85,6 +85,18 @@ body {
   margin-right: 86px;
 }
 
+.logo {
+  transform: rotate(360deg);
+  transition: all 1s;
+  transition-timing-function: cubic-bezier(1, 0.8, 0.5, 1);
+}
+
+.logo:hover {
+  transform: rotate(0deg);
+  transition-delay: 0;
+  transition: all 1s;
+}
+
 .navigation-link {
   position: relative;
   text-transform: uppercase;
@@ -610,8 +622,8 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 998px;
-  height: 998px;
+  width: 798px;
+  height: 798px;
   transform: translate(-50%, -50%);
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
