@@ -75,8 +75,8 @@
                     <p class="hero-place">restaurant</p>
                     <h1 class="hero-name">hungry people</h1>
                     <div class="main-bottom">
-                        <a href="#booking" class="site-bottom link" type="button">book table</a>
-                        <a href="./information.html" class="site-bottom link" type="button">explore</a>
+                        <a href="#booking" class="site-bottom link">book table</a>
+                        <a href="./information.html" class="site-bottom link">explore</a>
                     </div>
                     <a href="#map">
                         <svg class="hero-down-btn">
@@ -135,7 +135,7 @@
     <!--=========================MASTER-SHEF================================-->
     <section class="dark">
         <div class="bigger-container master-chef">
-            <h2 class="small-title" id="team"><span class="anchor" id="team"></span>our team</h2>
+            <h2 class="small-title"><span class="anchor" id="team"></span>our team</h2>
             <div class="chef-main-container">
                 <div class="chef-left-container">
                     <img src="./images/master-chef/masterchef-img.png" alt="photo of master chef">
@@ -189,15 +189,8 @@
                             </label>
                             <label class="book-a-table-label">
                                 People
-                                <select class="imput" id="people" name="number">
-                                    <option selected="selected" style="display: none;"></option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6+</option>
-                                </select>
+                                <input class="imput" type="text" name="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                                 maxlength="2" title="Enter the number of people from 1 to 10" required>
                             </label>
                             <label class="book-a-table-label">
                                 time
