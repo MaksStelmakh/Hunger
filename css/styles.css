@@ -119,13 +119,19 @@ body {
 /* ==============================================================HERO */
 
 .hero {
-  position: relative;
   display: flex;
   justify-content: space-between;
   background-image: url(../images/hero/header-bg.jpg);
   background-color: black;
   width: 1440px;
   height: 800px;
+}
+
+.hero-left-container {
+  position: relative;
+  width: 250px;
+  height: 100%;
+  margin-right: -120px;
 }
 
 .hero-left-text {
@@ -135,8 +141,8 @@ body {
   font-weight: 700;
   font-size: 12px;
   line-height: 1;
-  transform: rotate(-90deg);
   color: var(--white-color);
+  transform: rotate(-90deg);
 }
 
 .hero-center-section {
@@ -144,7 +150,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 120px;
   padding-top: 240px;
 }
 
