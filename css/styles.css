@@ -80,7 +80,7 @@ img {
   position: absolute;
   display: flex;
   justify-content: space-between;
-  z-index: 100;
+  z-index: 1;
 }
 
 body {
@@ -622,6 +622,7 @@ body {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 500ms linear, visibility 500ms linear;
+  z-index: 2;
 }
 
 .modal {
