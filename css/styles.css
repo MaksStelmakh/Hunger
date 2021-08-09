@@ -19,6 +19,7 @@ h6,
 p {
   margin-top: 0;
   margin-bottom: 0;
+  position: relative;
 }
 
 ul,
@@ -60,6 +61,11 @@ img {
 
 .dark {
   background-color: rgba(0, 0, 0, 0.9);
+}
+
+.anchor {
+  position: absolute;
+  top: -200px;
 }
 
 /* ====================================================HEADER */
@@ -765,4 +771,33 @@ body {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   -khtml-border-radius: 5px;
+}
+/* =========================================================INFORMATION */
+
+.info-hero {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-description {
+  font-size: 36px;
+  line-height: 1.33;
+  text-align: center;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.text-description {
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.info-nav-container {
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.footer-info {
+  color: var(--white-color);
 }

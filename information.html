@@ -4,7 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hunger Explore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;700&family=Roboto:wght@900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css"
+        integrity="sha512-sqIVMkf5f8XGYI/UZYGs7wODxlUeoj9JknataPfUwtvrSKWMHrMXGZ7Evb6nabFYJQG15vFFyALe6r0nWCD1Ug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header class="container header" id="header">
@@ -13,20 +24,20 @@
                 <div class="menu-navigation">
                     <ul class="list navigation-list">
                         <li class="navigation-item">
-                            <a class="link navigation-link" href="./">home</a>
+                            <a class="link navigation-link" href="./index.html">home</a>
                         </li>
                         <li class="navigation-item">
-                            <a class="link navigation-link" href="#about">about</a>
+                            <a class="link navigation-link" href="./index.html#about">about</a>
                         </li>
                         <li class="navigation-item">
-                            <a class="link navigation-link" href="#team">team</a>
+                            <a class="link navigation-link" href="./index.html#team">team</a>
                         </li>
                         <li class="navigation-item">
-                            <a class="link navigation-link" href="#booking">booking</a>
+                            <a class="link navigation-link" href="./index.html#booking">booking</a>
                         </li>
                     </ul>
                 </div>
-                <a href="./">
+                <a href="./index.html">
                     <svg class="logo">
                         <use href="./images/sprite.svg#icon-logo"></use>
                     </svg>
@@ -34,21 +45,62 @@
                 <div class="menu-navigation">
                     <ul class="list navigation-list">
                         <li class="navigation-item">
-                            <a class="link navigation-link" href="#menu">menu</a>
+                            <a class="link navigation-link" href="./index.html#menu">menu</a>
                         </li>
                         <li class="navigation-item">
-                            <a class="link navigation-link" href="#events">galerie</a>
+                            <a class="link navigation-link" href="./index.html#events">galerie</a>
                         </li>
                         <li class="navigation-item">
-                            <a class="link navigation-link" href="#events">events</a>
+                            <a class="link navigation-link" href="./index.html#events">events</a>
                         </li>
                         <li class="navigation-item">
-                            <a class="link navigation-link" href="#contact">contact</a>
+                            <a class="link navigation-link" href="./index.html#contact">contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <main>
+        <section class="dark">
+            <div class="container hero info-hero">
+                <h1 class="hero-name info-description">Description of the restaurant</h1>
+                <p class="section-up-text white-text text-description">This Italian restaurant is located in the city centre. The restaurant serves traditional Italian cuisine in a calm,
+                relaxing atmosphere.
+                
+                In front of the entrance there is a summer terrace where guests can enjoy a light business lunch or a cup of coffee.
+                
+                The interior of the restaurant is elegantly decorated in warm colours. Quiet music is played in the background. Guests
+                can order fresh pizza, delicious pasta as well as excellent meat and fish specialties.
+                
+                A wide range of salads and snacks is also served here. After a lunch or dinner, you will be offered to try one of the
+                desserts. The meal can be accompanied by alcoholic and non-alcoholic cocktails.
+                
+                Prices in this restaurant are affordable. Waiters are very attentive and can assist with the choice of the dishes. I
+                have their loyalty card and receive 5% discount every time I go there. You can also order food online and they will
+                deliver it to your door. The delivery is free of charge.</p>
+            </div>
+        </section>
+    </main>
+        <footer class="dark">
+            <div class="contact-down-container info-nav-container">
+                <p class="contact-info information footer-info"> <span>
+                        <svg class="info-svg" width="20px" height="20px">
+                            <use href="./images/sprite.svg#icon-location" width="20px" height="20px"></use>
+                        </svg>
+                    </span> 5th London Boulevard, U.K. <span>
+                        <svg class="info-svg" width="20px" height="20px">
+                            <use href="./images/sprite.svg#icon-tell" width="20px" height="20px"></use>
+                        </svg>
+                    </span> +40 729 131 637/+40 726 458 782 <span>
+                        <svg class="info-svg" width="20px" height="20px">
+                            <use href="./images/sprite.svg#icon-mail" width="20px" height="20px"></use>
+                        </svg>
+                    </span> office@mindblister.com</p>
+            </div>
+            <div class="bigger-container footer-container">
+                <p class="footer-text">© Copyright <span class="footer-black-text">Mindblister</span> 2019</p>
+            </div>
+        </footer>
 </body>
 </html>
