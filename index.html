@@ -417,18 +417,18 @@
         </div>
         <p class="events-info">For private events please call: <span class="events-tell">+40 729 131 637/+40 726 458 782</span>
             or use the contact form.</p>
-        <div class="events-down-photo" id="galerie">
+        <div class="events-down-photo" id="galerie" data-modal-open>
             <button class="gallery">
-                <img src="./images/events/events1.jpg" alt="">
+                <img src="./images/events/events1.jpg" alt="" width="360px" height="360px">
             </button>
             <button class="gallery">
-                <img  src="./images/events/events2.jpg" alt="">
+                <img  src="./images/events/events2.jpg" alt="" width="360px" height="360px">
             </button>
             <button class="gallery">
-                <img src="./images/events/events3.jpg" alt="">
+                <img src="./images/events/events3.jpg" alt="" width="360px" height="360px">
             </button>
             <button class="gallery">
-                <img src="./images/events/events4.jpg" alt="">
+                <img src="./images/events/events4.jpg" alt="" width="360px" height="360px">
             </button>  
         </div>
     </div>
@@ -476,11 +476,35 @@
         <p class="footer-text">© Copyright <span class="footer-black-text">Mindblister</span> 2019</p>
     </div>
 </footer>
+<!-- ===================================MODAL-GALLERY=========================== -->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+            <svg class="btn" width="41" height="47" ;>
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <div class="modal-gallery">
+            <div>
+                <img src="./images/events/gallery/gallery1.jpg" alt="" width="1000px" height="1000px">
+            </div>
+            <div>
+                <img src="./images/events/gallery/gallery2.jpg" alt="" width="1000px" height="1000px">
+            </div>
+            <div>
+                <img src="./images/events/gallery/gallery3.jpg" alt="" width="1000px" height="1000px">
+            </div>
+            <div>
+                <img src="./images/events/gallery/gallery4.jpg" alt="" width="1000px" height="1000px">
+            </div>
+        </div>
+    </div>
+</div>
 </main>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
-
+<script src="./js/gallery.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         $('.specialties-slider').slick({
@@ -488,6 +512,15 @@
             dots:true,
             autoplay: true,
             autoplaySpeed: 5000
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.modal-gallery').slick({
+            arrows: true,
+            dots: true,
         });
     });
 </script>

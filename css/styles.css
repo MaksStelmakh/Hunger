@@ -431,7 +431,6 @@ body {
 
 .slick-dots {
   position: absolute;
-  z-index: 10;
   bottom: 3px;
 }
 
@@ -575,8 +574,8 @@ body {
 }
 
 .events-down-photo img {
-  height: 400px;
-  width: 400px;
+  height: 360px;
+  width: 360px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
@@ -584,8 +583,8 @@ body {
   transition: all 1s ease;
 }
 .events-down-photo img:hover {
-  width: 300px;
-  height: 300px;
+  width: 270px;
+  height: 270px;
 }
 
 .events-tell {
@@ -677,4 +676,57 @@ body {
   font-weight: 700;
 }
 
-/* .......................................................... */
+/* ...........................MODAL-GALLERY............................... */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 500ms linear, visibility 500ms linear;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 998px;
+  height: 998px;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--bottom-color);
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.btn {
+  width: 11px;
+  height: 11px;
+  fill: #000000;
+}
+
+.btn:hover,
+.btn:focus {
+  fill: var(--accent-color);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
