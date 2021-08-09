@@ -566,6 +566,28 @@ body {
   text-align: center;
 }
 
+.gallery {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: var(--black-color);
+}
+
+.events-down-photo img {
+  height: 400px;
+  width: 400px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.events-down-photo img:hover {
+  width: 300px;
+  height: 300px;
+}
+
 .events-tell {
   font-weight: 700;
 }
@@ -654,3 +676,5 @@ body {
 .footer-black-text {
   font-weight: 700;
 }
+
+/* .......................................................... */
