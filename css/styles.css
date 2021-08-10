@@ -47,6 +47,10 @@ img {
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 .container {
   width: 1310px;
   padding: 0 15px;
@@ -70,6 +74,18 @@ img {
 
 /* ====================================================HEADER */
 
+.header {
+  position: relative;
+}
+
+.absolute-header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 .navigation-list {
   display: flex;
   margin: 45px 27px;
@@ -77,14 +93,8 @@ img {
 }
 
 .main-navigation {
-  position: absolute;
   display: flex;
-  justify-content: space-between;
-  z-index: 1;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
+  justify-content: center;
 }
 
 .navigation-item:nth-child(-n + 3) {
@@ -672,6 +682,14 @@ body {
   pointer-events: none;
 }
 
+.slick-prev:before,
+.slick-next:before {
+  font-size: 50px;
+}
+
+.slick-prev {
+  left: -56px;
+}
 /* ==============================================================CONTACT */
 
 .contact-container {
