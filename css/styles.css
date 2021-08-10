@@ -52,7 +52,7 @@ body {
 }
 
 .container {
-  width: 1310px;
+  max-width: 1310px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -418,6 +418,12 @@ body {
   height: 60px;
   text-transform: uppercase;
   cursor: pointer;
+  opacity: 0.75;
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  opacity: 1;
 }
 
 .book-a-table-label {
